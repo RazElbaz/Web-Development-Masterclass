@@ -9,7 +9,7 @@ else{
 $var3=6;
 
 $var2="<html>
-<head></head>
+<head><script type=text/javascript src='myscript.js'></script></head>
 <body>
 <h1 id=val2>Hello!</h1>
 <form action='http://localhost/lessons/index2.php' method='POST'>
@@ -22,17 +22,13 @@ $var2="<html>
     <option value='javascript'>JavaScript</option>
 </select>
 <input type='submit' value='Submit'>
+<br><br>
+<button onclick=\"document.getElementById('value1').innerHTML=Date(); return false;\">Update</button>
 </form>
 <script>
-    var a=5;
-    var b=3;
-    var c=a+b;
-    c=c+c;
-    function getval(id, text){
-        document.getElementById(id).innerHTML=text;
-    }
+
     getval('value1', 'new value');
-    getval('val2', 'Welcome');
+    getval('val2', 'Welcome!');
     
 </script>
 </body>
