@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <title>Untitled Document</title>
 <style>
+    #topArea{
+        background-color: black;
+        height: 100px;
+    }
     .coloumn{
         /* width: 200px;
         float: left; */
@@ -15,11 +19,15 @@
         clear: both;
     }
     .positionME{
-        position: relative;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        margin-left: -64px;
     }
 </style>
 </head>
 <body>
-    <img src="apple.jpg"/>
+    <div id="topArea"></div>
+    <img src="apple.jpg" class="positionME"/>
 </body>
 </html>
