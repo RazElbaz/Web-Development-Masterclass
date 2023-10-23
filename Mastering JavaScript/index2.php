@@ -11,7 +11,7 @@ $var3=6;
 $var2="<html>
 <head></head>
 <body>
-<h1>Hello</h1>
+<h1 id=val2>Hello!</h1>
 <form action='http://localhost/lessons/index2.php' method='POST'>
 <input type='text' name='name'>Your Name</input><br  />
 <p id='value1'><b>What lessons do you want to learn?</b></p><br>
@@ -28,14 +28,12 @@ $var2="<html>
     var b=3;
     var c=a+b;
     c=c+c;
-    function getval(id){
-        return document.getElementById(id).innerHTML;
+    function getval(id, text){
+        document.getElementById(id).innerHTML=text;
     }
-    val functionvar=getval('value1');
-
-    var htmlval=document.getElementById('value1').innerHTML;
-    alert(htmlval);
-    alert(functionvar);
+    getval('value1', 'new value');
+    getval('val2', 'Welcome');
+    
 </script>
 </body>
 </html>";
