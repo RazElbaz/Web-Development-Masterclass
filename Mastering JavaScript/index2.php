@@ -21,6 +21,15 @@ $var2="<html>
     <option value='orcale'>Orcale</option>
     <option value='javascript'>JavaScript</option>
 </select>
+<p>Are you learning from our videos?</p>
+Yes
+<input type=\"radio\" onclick=\"javascript:yesnoCheck();\" id=\"yesCheck\">No
+<input type=\"radio\" onclick=\"javascript:yesnoCheck();\" id=\"noCheck\">
+<br>
+<div id=\"ifYes\" style=\"display:none\">If no, please explain:
+    <input type='text' id='yes' name='yes'/>
+</div>
+
 <input type='submit' value='Submit'>
 <br><br>
 <button onclick=\"document.getElementById('value1').innerHTML=Date(); return false;\">Update</button>
