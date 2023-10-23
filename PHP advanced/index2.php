@@ -1,20 +1,18 @@
 <?php
-$newvar="New lesson";
-$check=3;
+$var=4;
+$var3=6;
+$var2="<html>
+<head></head>
+<body><h1>Hello</h1>
+<form action='http://localhost/lessons/index2.php' method='GET'>
+<input type='text' name='name'></input><br  />
+<input type='submit' value='Submit'>
+</form>
+</body>
+</html>";
 
-if($check==5){
-echo $newvar;
-}
-elseif($check>=4){
-    echo "second result";
-}
-else{
-    echo "third result";
-}
- while($check<7){
-    echo "<br>".$check;
-    $check++;
- }
+echo $var;
+echo $var2;
 
 
 
