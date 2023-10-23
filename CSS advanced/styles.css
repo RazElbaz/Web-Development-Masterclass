@@ -21,7 +21,7 @@
             padding: 20px;
             font-family: Impact, Haettenschweiler;
             font-size: 20px;
-            background: #ccc;
+            background-color: rgba(255, 0, 0, 0.422);
         }
         #sideArea a{
             text-decoration: none;
