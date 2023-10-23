@@ -12,7 +12,7 @@ $var2="<html>
 <head><script type=text/javascript src='myscript.js'></script></head>
 <body>
 <h1 id=val2>Hello!</h1>
-<form action='http://localhost/lessons/index2.php' method='POST'>
+<form action='http://localhost/lessons/index2.php' method='POST' id='form1'>
 <input type='text' name='name'>Your Name</input><br  />
 <p id='value1'><b>What lessons do you want to learn?</b></p><br>
  <select name='lessons[]' size='4' multiple>
@@ -35,9 +35,16 @@ Yes
 <button onclick=\"document.getElementById('value1').innerHTML=Date(); return false;\">Update</button>
 </form>
 <script>
-
-    getval('value1', 'new value');
-    getval('val2', 'Welcome!');
+    function validateForm(){
+        var name= form[\"name\"].value;
+        if( name === \"\"){
+            alert(\"Name cannot be left blank.\");
+            return false;
+        }
+    }
+    var form= document.getElementById(\"form1\");
+    form.onsubmit = validateForm;
+   
     
 </script>
 </body>
