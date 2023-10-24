@@ -17,7 +17,17 @@ foreach($bookstore as $val){
     }
     $html.="</bookstore>";
 }
-$html.="</stores></p></body></html>";
+$html.="</stores></p><script>
+var htmlval=document.getElementById('xml').innerHTML;
+parser = new DOMParser();
+    xmlDoc= parser.parseFromString(htmlval, \"text/xml\");
+    var output= xmlDoc.getElementsByTagName (\"subject\")[0].childNodes[0].nodeValue;
+    var output1= xmlDoc.getElementsByTagName (\"title\")[0].childNodes[0].nodeValue;
+    var output2= xmlDoc.getElementsByTagName (\"author\")[0].childNodes[0].nodeValue;
+    alert(output);
+    alert(output1);
+    alert(output2);
+</script></body></html>";
 echo $html;
 
 ?>
