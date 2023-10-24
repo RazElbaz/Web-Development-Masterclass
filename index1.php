@@ -7,7 +7,7 @@ $books=array(
     array('Book3 subject', 'Book3 title', 'Book3 author')
     );
 
-$tab="&nbps;&nbps;&nbps;&nbps;";
+$tab="&nbsp;&nbsp;&nbsp;&nbsp;";
 $html="<html><head></head></html>";
 
 foreach($bookstore as $val){
