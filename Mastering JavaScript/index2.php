@@ -11,7 +11,7 @@ $var3=6;
 $var2="<html>
 <head><script type=text/javascript src='myscript.js'></script></head>
 <body>
-<h1 id=val2>Hello!</h1>
+<h1 id=val2>Hello</h1>
 <form action='http://localhost/lessons/index2.php' method='POST' id='form1'>
 <input type='text' name='name'>Your Name</input><br  />
 <p id='value1'><b>What lessons do you want to learn?</b></p><br>
@@ -44,8 +44,13 @@ Yes
     }
     var form= document.getElementById(\"form1\");
     form.onsubmit = validateForm;
-   
-    
+
+var myObj = {'name':'Raz', 'age':25};
+var myJSON = JSON.stringify(myObj);
+// alert(myJSON);
+var myJSON2 = JSON.parse(myJSON);
+getval('value1', myJSON2.name);
+
 </script>
 </body>
 </html>";
