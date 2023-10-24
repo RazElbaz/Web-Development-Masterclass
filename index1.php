@@ -8,15 +8,16 @@ $books=array(
     );
 
 $tab="&nbsp;&nbsp;&nbsp;&nbsp;";
-$html="<html><head></head></html>";
+$html="<html><head></head></html><body><p id='xml'><stores>";
 
 foreach($bookstore as $val){
-    $html.=htmlspecialchars("<bookstore>")."<br>$tab".htmlspecialchars("<name>".$val."</name>")."<br>";
+    $html.="<bookstore>"."<name>".$val."</name>";
     foreach($books as $info){
-        $html.="$tab$tab".htmlspecialchars("<subject>$info[0]</subject>")."<br>$tab$tab$tab".htmlspecialchars("<title>".$info[1]."</title>")."<br>$tab$tab$tab$tab".htmlspecialchars("<author>$info[2]</author>")."<br>";
+        $html.=""."<subject>$info[0]</subject>"."<title>".$info[1]."</title>"."<author>$info[2]</author>";
     }
-    $html.=htmlspecialchars("</bookstore>")."<br>";
+    $html.="</bookstore>";
 }
+$html.="</stores></p></body></html>";
 echo $html;
 
 ?>
