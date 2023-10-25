@@ -45,6 +45,7 @@ def ownersTable(owners_list, column_names, html):
         html+="</tr>"
     html+="</table>"
     return(html)
+
 def petquery():
     db = pymysql.connect(host="localhost", user="root", passwd="mine",db="creative_online_school")
     cursor=db.cursor()
@@ -55,6 +56,7 @@ def petquery():
     cursor.execute(sql)
     columns = cursor.fetchall()
     return (pets,columns)
+
 def petsTable(pets_list, column_names, html):
     html+="<table border='1'>"
     html+="<tr>"
