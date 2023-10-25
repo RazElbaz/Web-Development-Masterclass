@@ -9,10 +9,13 @@ Download
 
 # RUN  
 
-XAMPP control Application -> MySQL -> Start
+1. ```XAMPP control Application -> MySQL -> Start```
+2. ```python database.py```
 
+If there is difficulty in connecting to the MariaDB (SQL) server and you received the error with the password:
+Connect to the MySQL or MariaDB Server: Use the following command to connect to the database server: typed the following command: ```mysql -u root -p```
 
-**Start MySQL in Safe Mode (Windows):**
+**1)Start MySQL in Safe Mode (Windows):**
 You'll start the MySQL server in safe mode, which allows you to reset the root password without needing to enter a password.
 
 Open the Command Prompt as an administrator:
@@ -28,7 +31,7 @@ Start MySQL in safe mode:
 
 mysqld --skip-grant-tables
 
-**Open a New Command Prompt Window:**
+**2)Open a New Command Prompt Window:**
 While the MySQL server is running in safe mode, open a new Command Prompt window or tab. You'll use this to reset the password.
 
 **Connect to MySQL:**
@@ -38,10 +41,10 @@ In the new Command Prompt window, connect to MySQL without specifying a password
 
 mysql -u root
 USE mysql;
-MariaDB [mysql]> ```SET PASSWORD = PASSWORD('mine');```
+MariaDB [mysql]> ```SET PASSWORD = PASSWORD('mine');``` 
 
 
-**Test the New Password:**  
+**3)Test the New Password:**  
 You should now be able to connect to MySQL with the new root password:
 
 **bash**
