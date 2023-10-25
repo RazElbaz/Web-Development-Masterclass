@@ -1,0 +1,4 @@
+1, hulk, male, golden retriver, yellow, 5
+2, princess, femail, corgie, brown, 2
+3, hunter, male, yellow lab, yellow, 1
+4, mary, female, black lab, black, 3
